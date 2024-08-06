@@ -1,8 +1,31 @@
-# React + Vite
+# Calculadora de la Zona de Fresnel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esta es una calculadora de la zona de Fresnel donde se ingresa la distancia en kilómetros y la frecuencia en GHz para obtener el resultado en metros.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Ingresar la distancia en kilómetros.
+- Ingresar la frecuencia en GHz.
+- Calcular la zona de Fresnel en metros.
+
+## Instalación
+
+Sigue estos pasos para clonar el repositorio y levantar el proyecto con Vite.
+
+### Clonar el repositorio
+
+```bash
+git clone https://github.com/simonlombardi/calculadora-Fresnel.git
+cd calculadora-Fresnel
+```
+
+### Instalar dependencias
+
+```bash
+npm install
+```
+### Levantar el proyecto
+
+```bash
+npm run dev
+```
