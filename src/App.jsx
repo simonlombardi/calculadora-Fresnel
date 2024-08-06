@@ -30,12 +30,12 @@ function App() {
     }
   }
   const handleDistance = (distance) => {
-    if (/^\d*$/.test(distance)) {
+    if (/^\d*\.?\d*$/.test(distance)) {
       setDistance(distance);
     }
   }
   const handleFrequency = (frequency) => {
-    if (/^\d*$/.test(frequency)) {
+    if (/^\d*\.?\d*$/.test(frequency)) {
       setFrequency(frequency);
     }
   }
