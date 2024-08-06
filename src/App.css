@@ -1,0 +1,55 @@
+.principal-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-top: 40px;
+}
+h1{
+  text-align: center;
+}
+
+.introduction{
+  width: 55%;
+}
+
+.definition {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.calculator-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.calculator{
+  display: flex;
+  width: 40%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.image-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
