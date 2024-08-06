@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import NavBar from './components/NavBar'
+import imgEcuacion from '../public/ecuacion.png'
+import imgZonaFresnel from '../public/imagen-zona-fresnel.png'
 
 function App() {
   const [distance, setDistance] = useState('')
@@ -55,7 +57,7 @@ function App() {
           <h4>Definicion</h4>
           <p>La zona de Fresnel se refiere a una serie de elipsoides concéntricos que se forman entre un transmisor y un receptor en el camino de propagación de una onda electromagnética. Estas zonas están determinadas por las diferencias en las distancias recorridas por las ondas desde el transmisor al receptor. Las zonas de Fresnel describen cómo las ondas interferirán entre sí, dependiendo de si los obstáculos se encuentran dentro o fuera de estas zonas.</p>
           <div className='image-container'>
-            <img src="/imagen-zona-fresnel.png" alt="" height='70%' width='70%' />
+            <img src={imgZonaFresnel} alt="imagen zona Fresnel" height='70%' width='70%' />
             <ul>
               <li>La zona 1 es la que mas afecta a la intensidad de la señal</li>
               <li>La zona 2 afecta menos que la 1</li>
@@ -70,7 +72,7 @@ function App() {
       <div className="mt-5 calculator" id='calculator'>
         <h4 className='mb-5'>Calculadora</h4>
           <div width='100%' height='100%' className='d-flex justify-content-center'>
-            <img src="/ecuacion.png" alt=""  width='60%'/>
+            <img src={imgEcuacion} alt="ecuacion zona Fresnel"  width='60%'/>
           </div>
         <div className='mt-5 form'>
           <label htmlFor="exampleFormControlInput1" className="form-label">Distancia emisor/receptor [km]</label>
