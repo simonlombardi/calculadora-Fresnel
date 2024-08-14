@@ -36,7 +36,12 @@ function App() {
   }
   const handleFrequency = (frequency) => {
     if (/^\d*\.?\d*$/.test(frequency)) {
-      setFrequency(frequency);
+      if (frequency === 0){
+        setFrequency('')
+      }
+      else{
+        setFrequency(frequency);
+      }
     }
   }
   const handleClean = () => {
