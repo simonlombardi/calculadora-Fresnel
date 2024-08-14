@@ -13,6 +13,9 @@ const NavBar = () => {
               <li className="nav-item">
                 <a className="nav-link" href="https://www.convertworld.com/es/" target="blank">Conversor de unidades</a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link">Hecho por: Simon Lombardi</a>
+              </li>
             </ul>
           </div>
         </div>

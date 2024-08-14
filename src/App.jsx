@@ -80,7 +80,7 @@ function App() {
           <label htmlFor="exampleFormControlInput2" className="form-label">Frecuencia [Ghz]</label>
           <input className="form-control" onChange={(e) => handleFrequency(e.target.value)} value={frequency} id="exampleFormControlInput2" placeholder="Frecuencia [Ghz]" />
           {error && (<p style={{fontWeight:'bold'}}>{distance ? 'Ingrese el valor de la frecuencia' : 'Ingrese el valor de la distancia'}</p>)}
-          {result && (<p style={{fontWeight:'bold'}}>El máximo radio de la primer zona de Fresnel es de: {result} metros</p>)}
+          {result && (<p style={{fontWeight:'bold'}}>El radio de la zona de Fresnel es de: {result} metros</p>)}
           <button type="button" className="btn btn-primary" onClick={handleCalculation}>Calcular</button>
           <button type="button" className="btn btn-secondary" onClick={handleClean}>Limpiar</button>
         </div>
