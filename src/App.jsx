@@ -22,7 +22,7 @@ function App() {
     setResult('')
     const CONSTANT = 8.656
     if (distance && frequency){
-      setResult(parseFloat(CONSTANT * Math.sqrt(distance / frequency)).toFixed(2))
+      setResult(parseFloat(CONSTANT * Math.sqrt(distance / frequency)))
       setError(false)
     }
     else{
@@ -36,12 +36,7 @@ function App() {
   }
   const handleFrequency = (frequency) => {
     if (/^\d*\.?\d*$/.test(frequency)) {
-      if (frequency === 0){
-        setFrequency('')
-      }
-      else{
-        setFrequency(frequency);
-      }
+      setFrequency(frequency);
     }
   }
   const handleClean = () => {
